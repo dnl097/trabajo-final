@@ -1,0 +1,259 @@
+
+body{
+    background-color: black;
+    color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background: linear-gradient(to bottom, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+}
+
+.texto-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    
+}
+
+.texto-banner p {
+    font-size: 24px;
+}
+
+
+.botones {
+    text-align: center;
+    margin: 70px 50px;
+    display: flex;
+
+}
+
+.boton {
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 0 15px;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: #005bb5;
+}
+
+
+.info-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.texto-info {
+    flex: 1;
+    padding: 20px;
+    font-size: 19px;
+}
+
+.imagen-info img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.imagen-final img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.contacto-cuadro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.contacto-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-item h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.contacto-item p {
+    font-size: 16px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+main img{
+    width: 30%;
+    height: 30%;
+    
+}
+
+
+
+.banner img{
+    display: flex;
+}
+.texto .banner{
+    text-align: justify;
+    
+}
+.imagen-final{
+    height: 35%;
+    width: 35%;
+    align-items: center;
+}
+/* Ajustes específicos para pantallas medianas y grandes (tabletas y computadoras) */
+@media (max-width: 1024px) {
+    .texto-banner h1 {
+        font-size: 40px;
+    }
+
+    .texto-info {
+        font-size: 16px;
+    }
+
+    .contacto-cuadro {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ajustes específicos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .texto-banner h1 {
+        font-size: 32px;
+    }
+
+    .texto-banner p {
+        font-size: 19px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .boton {
+        margin: 10px 0;
+    }
+
+    .info-imagen {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contacto-cuadro {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}
+
+/* Ajustes adicionales para pantallas extra pequeñas */
+@media (max-width: 480px) {
+    .texto-banner h1 {
+        font-size: 28px;
+    }
+
+    .texto-banner p {
+        font-size: 16px;
+    }
+
+    .botones {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .boton {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .contacto {
+        padding: 20px 10px;
+    }
+
+    .contacto-cuadro {
+        width: 90%;
+    }
+
+    .contacto-item p {
+        font-size: 16px;
+    }
+}
